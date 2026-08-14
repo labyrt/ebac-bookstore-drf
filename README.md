@@ -6,9 +6,21 @@ Projeto desenvolvido por **Lucy Mazzini Lessa** para o exercício de Django REST
 
 Partir de um projeto Django chamado `bookstore` e integrar o Django REST Framework usando Poetry.
 
-## Estrutura inicial
+## Alterações desta branch
 
-Nesta branch base, o projeto contém apenas a configuração padrão do Django necessária para o exercício. A integração com o DRF é realizada na branch `drf` e apresentada no Pull Request da atividade.
+A branch `drf` contém somente as mudanças necessárias para a atividade:
+
+- inclusão de `djangorestframework` nas dependências do projeto;
+- atualização do `poetry.lock` para refletir a dependência instalada;
+- inclusão de `'rest_framework'` em `INSTALLED_APPS` no `settings.py`.
+
+## Comandos do exercício
+
+```bash
+poetry add djangorestframework
+poetry update
+poetry run python manage.py runserver
+```
 
 ## Requisitos
 
